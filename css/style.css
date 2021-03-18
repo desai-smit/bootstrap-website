@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato' sans-serif;
+}
+
+html{
+    font-size: 15px;
+}
+
+.max{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+}
+
+.inner{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#preloder{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255, 255, 255) url('../img/258.gif') no-repeat center;
+    z-index: 100;
+}
+
+/* navigation start */
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.507);
+    z-index: 10;
+    transition: 1s;
+}
+
+.black{
+    background-color:#fff;
+}
+
+.black a{
+    color: #000;
+}
+
+.black .logo a{
+    color: #000;
+}
+
+.logo a{
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+
+.logo a:hover{
+    color: rgb(240, 99, 34);
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li{
+    margin-right: 20px;
+    list-style: none;
+    transition: 0.5s;
+}
+
+ul li a{
+    font-size: 1.2rem;
+    color: rgb(209, 209, 209);
+}
+
+ul li a:hover{
+    text-decoration: none;
+    color: rgb(240, 99, 34);
+}
+
+.toggle{
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+}
+
+.icon-bar{
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin: 2px auto;
+    margin-bottom: 5px;
+    background-color: #000;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+
+
+
+
+/* background image */
+
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/bg-masthead.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.603);
+    background-blend-mode: darken ;
+}
+
+/* banner start */
+
+.banner{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    color: #fff;
+}
+
+.banner h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hr{
+    width: 50px;
+    margin: 0 auto;
+    height: 5px;
+    background-color: rgb(240, 99, 34);
+    outline: none;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.banner p{
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+}
+
+.btn1{
+    width: 170px;
+    height: 50px;
+    border: 0px;
+    outline: none;
+    background-color: rgb(240, 99, 34);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(240, 99, 34);
+}
+
+/* section1 start */
+
+.section1{
+    width: 100%;
+    background-color: rgb(240, 99, 34);
+    padding: 5rem 0rem;
+    color: #fff;
+    text-align: center;
+}
+
+.section1 h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.hr1{
+    width: 50px;
+    margin: 0 auto;
+    height: 5px;
+    background-color: rgb(250,250,250);
+    outline: none;
+    border: none;
+    margin-bottom: 1.5rem;
+}
+
+.section1 p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.btn2{
+    width: 170px;
+    height: 50px;
+    border: 0px;
+    outline: none;
+    background-color: rgb(250,250,250);
+    color: rgb(240, 99, 34);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+/* section2 start */
+
+.section2{
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.section2 h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.section2 .hr{
+    margin-bottom: 5rem;
+}
+
+.box{
+    padding: 1rem 1.5rem;
+    transition: 500ms;
+    width: 23%;
+    cursor: pointer;
+
+}
+
+.box:hover{
+    margin-top: -15px;
+    box-shadow: 0px 0px 10px 5px rgb(240, 99, 34);
+    border-radius: 10px;
+}
+
+.box .fa{
+    font-size: 4.5rem;
+    color: rgb(240, 99, 34);
+    margin-bottom: 2rem;
+}
+
+.box h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.box p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+
+/* section3 start */
+
+.section3{
+    width: 100%;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.img1{
+    width: 35%;
+    position: relative;
+    background-color: rgb(240, 99, 34);
+    
+}
+
+.img1 img{
+    width: 100%;
+    display: block;
+    opacity: 1;
+    backface-visibility: hidden;
+    transition: 500ms;
+}
+
+.cata{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+
+}
+
+.cata h4{
+    font-size: 1.2rem;
+    font-weight: 800;  
+}
+
+.cata p{
+    font-size: 1.2rem;
+    font-weight: 300;  
+}
+
+.img1:hover img{
+    opacity: 0.1;
+}
+
+.img1:hover .cata{
+    opacity: 1;
+}
+
+/* section4 start */
+
+.section4{
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.section4 h1{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.section4 hr{
+    margin-bottom: 3rem;
+}
+
+.section4 p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+
+.box-1{
+    width: 48%;
+    margin-top: 5rem;
+    align-items: center;
+
+}
+
+
+.box-1 .fa{
+    font-size: 4.5rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.box-1 p{
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.box-1 .link{
+    color: rgb(240, 99, 34);
+}
+
+.box-1 .link:hover{
+    text-decoration: underline;
+}
+
+footer{
+    padding: 2rem 1rem;
+    background-color: #ccc;
+    text-align: center;
+}
+
+footer p{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* media query start here */
+
+
+@media (max-width:768px){
+    .toggle{
+        display:block ;
+    }
+
+    ul{
+        width: 100%;
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 100px;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    ul li:hover{
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+
+    ul li{
+        margin-bottom: 1rem;
+    }
+
+    ul li a{
+        color: #fff;
+    }
+
+    html{
+        font-size: 12px;
+    }
+
+    .box{
+        width: 40%;
+    }
+
+    .section3{
+        width: 100%;
+    }
+
+    .top{
+        width: 100%;
+        display: block;
+
+    }
+    
+    .img1{
+        width: 100%;
+        
+    }
+
+    .box-1 .fa{
+        font-size: 3rem;
+
+    }
+
+
+
+}
+
+@media (max-width:425px){
+
+    html{
+        font-size: 9px;
+    }
+
+    .banner h1{
+        font-size: 2.5rem;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .top{
+        width: 100%;
+    }
+}
